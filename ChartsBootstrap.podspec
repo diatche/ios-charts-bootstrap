@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "ChartsBootstrap"
   s.version = "0.1.0"
-  s.summary = "A quick and easy ios-charts encpsulation"
+  s.summary = "Bootstraps ios-charts for a pleasant and modern look"
   s.homepage = "https://github.com/diatche/ios-charts-bootstrap"
   s.license = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
   s.authors = "Pavel Diatchenko"
