@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>ChartsBootstrapSwiftDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>A43ECC441B3F6BAE00F0D187</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A43ECC8F1B3F800800F0D187</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A43ECCA31B3F800900F0D187</key>
 		<dict>
 			<key>primary</key>
 			<true/>

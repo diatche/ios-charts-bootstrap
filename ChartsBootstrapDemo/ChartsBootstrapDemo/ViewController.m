@@ -22,12 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    ChartDataBootstrap *dataBootstrap = [ChartDataBootstrap new];
-    dataBootstrap.xValues = @[@1, @2, @3, @4];
-    dataBootstrap.yLineValues = @[@3, @2, @3, @4];
-    dataBootstrap.yBarValues = @[@1, @1.5, @4, @3];
+    ChartViewBootstrap *bootstrap = [ChartViewBootstrap new];
+    bootstrap.data.xValues = @[@1, @2, @3, @4];
+    bootstrap.data.yLineValues = @[@3, @2, @3, @4];
+    bootstrap.data.yBarValues = @[@1, @1.5, @4, @3];
 
-    self.chartView.data = dataBootstrap.combinedData;
+    [bootstrap bootstrapWithCombinedChart:self.chartView];
 }
 
 - (void)didReceiveMemoryWarning {

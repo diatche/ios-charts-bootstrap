@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A43ECC271B3EB77200F0D187 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43ECC261B3EB77200F0D187 /* UIKit.framework */; };
+		A43ECC8B1B3F7C3F00F0D187 /* ChartViewBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43ECC8A1B3F7C3F00F0D187 /* ChartViewBootstrap.swift */; };
 		A49463B51B3EB1EA0061ECA9 /* ChartsBootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = A49463B41B3EB1EA0061ECA9 /* ChartsBootstrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A49463BB1B3EB1EA0061ECA9 /* ChartsBootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49463AF1B3EB1EA0061ECA9 /* ChartsBootstrap.framework */; };
 		A49463C21B3EB1EA0061ECA9 /* ChartsBootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49463C11B3EB1EA0061ECA9 /* ChartsBootstrapTests.swift */; };
@@ -32,6 +33,8 @@
 		5965507850456A8BDAA9C669 /* Pods_ChartsBootstrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsBootstrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3344C412964A4B689FAC78 /* Pods-ChartsBootstrap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsBootstrap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsBootstrap/Pods-ChartsBootstrap.debug.xcconfig"; sourceTree = "<group>"; };
 		A43ECC261B3EB77200F0D187 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A43ECC8A1B3F7C3F00F0D187 /* ChartViewBootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewBootstrap.swift; sourceTree = "<group>"; };
+		A43ECCBB1B3F81A900F0D187 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "Pods/../build/Debug-iphoneos/Pods-ChartsBootstrap/Charts.framework"; sourceTree = "<group>"; };
 		A49463AF1B3EB1EA0061ECA9 /* ChartsBootstrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChartsBootstrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49463B31B3EB1EA0061ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49463B41B3EB1EA0061ECA9 /* ChartsBootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsBootstrap.h; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 				A49463B41B3EB1EA0061ECA9 /* ChartsBootstrap.h */,
 				A49463B21B3EB1EA0061ECA9 /* Supporting Files */,
 				A49463CB1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift */,
+				A43ECC8A1B3F7C3F00F0D187 /* ChartViewBootstrap.swift */,
 			);
 			path = ChartsBootstrap;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 		F57F0CECDA2B12E82E0ED97F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A43ECCBB1B3F81A900F0D187 /* Charts.framework */,
 				A43ECC261B3EB77200F0D187 /* UIKit.framework */,
 				A49463DE1B3EB6AA0061ECA9 /* Foundation.framework */,
 				A49463DC1B3EB6930061ECA9 /* CoreGraphics.framework */,
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43ECC8B1B3F7C3F00F0D187 /* ChartViewBootstrap.swift in Sources */,
 				A49463CC1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

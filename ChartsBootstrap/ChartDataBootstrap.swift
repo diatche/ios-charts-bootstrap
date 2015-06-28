@@ -36,7 +36,10 @@ import Charts
                 entries.append(ChartDataEntry(value: value, xIndex: index))
             }
 
-            lineData.addDataSet(LineChartDataSet(yVals: entries, label: ""))
+            var dataSet = LineChartDataSet(yVals: entries, label: "")
+            dataSet.drawValuesEnabled = false
+
+            lineData.addDataSet(dataSet)
             combinedData.lineData = lineData
         }
 
@@ -48,7 +51,11 @@ import Charts
                 barEntries.append(BarChartDataEntry(value: value, xIndex: index))
             }
 
-            barData.addDataSet(BarChartDataSet(yVals: barEntries, label: ""))
+            var dataSet = BarChartDataSet(yVals: barEntries, label: "")
+            dataSet.drawValuesEnabled = false
+            dataSet.barSpace = 0.35
+
+            barData.addDataSet(dataSet)
             combinedData.barData = barData
         }
 
