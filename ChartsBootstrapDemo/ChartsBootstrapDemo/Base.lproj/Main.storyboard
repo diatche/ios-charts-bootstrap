@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jy-Iv-FFi" customClass="CombinedChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="160" width="600" height="280"/>
+                                <rect key="frame" x="10" y="160" width="580" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -25,8 +25,8 @@
                         <constraints>
                             <constraint firstItem="2jy-Iv-FFi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="Cgu-oo-cWZ"/>
                             <constraint firstAttribute="centerY" secondItem="2jy-Iv-FFi" secondAttribute="centerY" id="hRX-BI-zRo"/>
-                            <constraint firstItem="2jy-Iv-FFi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uWU-CX-4Pk"/>
-                            <constraint firstAttribute="trailing" secondItem="2jy-Iv-FFi" secondAttribute="trailing" id="vMD-c7-h1m"/>
+                            <constraint firstAttribute="centerX" secondItem="2jy-Iv-FFi" secondAttribute="centerX" id="lux-ER-L1h"/>
+                            <constraint firstItem="2jy-Iv-FFi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="uWU-CX-4Pk"/>
                         </constraints>
                     </view>
                     <connections>

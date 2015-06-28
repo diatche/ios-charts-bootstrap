@@ -14,13 +14,23 @@ import Charts
 
     public var xStringValues: [String] {
         return xValues.map { x -> String in
-            if let printable = x as? Printable {
+            if let date = x as? NSDate, formatter = self.xDateValueFormatter {
+                return formatter.stringFromDate(date)
+            }
+            else if let printable = x as? Printable {
                 return printable.description
-            } else {
+            }
+            else {
                 return ""
             }
         }
     }
+
+    lazy public var xDateValueFormatter: NSDateFormatter? = {
+        var formatter = NSDateFormatter()
+        formatter.dateFormat = "d/M"
+        return formatter
+    }()
 
     public var yLineValues: [Float] = []
     public var yBarValues: [Float] = []
@@ -71,5 +81,17 @@ import Charts
         }
 
         return combinedData
+    }
+
+    public var maximumYValue: Float {
+        return (yLineValues + yBarValues).reduce(nil) { (current: Float?, value: Float) -> Float? in
+            return value > (current ?? value) ? value : (current ?? value)
+        }!
+    }
+
+    public var suggestedMaximumYValue: Float {
+        var max = maximumYValue
+        var exp = ceil(log(max) / log(5))
+        return pow(5, exp)
     }
 }

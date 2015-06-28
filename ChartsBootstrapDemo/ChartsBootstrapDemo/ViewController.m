@@ -23,16 +23,35 @@
     [super viewDidLoad];
 
     ChartViewBootstrap *bootstrap = [ChartViewBootstrap new];
-    bootstrap.data.xValues = @[@1, @2, @3, @4, @1, @2, @3];
-    bootstrap.data.yLineValues = @[@2, @2.5, @2.8, @2.6, @3, @2.7, @2.5];
-    bootstrap.data.yBarValues = @[@1, @1.5, @2, @1.5, @1, @1.5, @1.5];
 
-    [bootstrap bootstrapWithCombinedChart:self.chartView];
+    bootstrap.data.xValues = [self datesFromDay:18 month:2 count:7];
+    bootstrap.data.xDateValueFormatter.dateFormat = @"EEE";
+
+    bootstrap.data.yLineValues = @[@22, @26, @21, @38, @28, @31, @25];
+    bootstrap.data.yBarValues = @[@3, @7, @13, @5, @13, @18, @17];
+
+    [bootstrap updateWithCombinedChart:self.chartView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSArray *)datesFromDay:(NSInteger)day month:(NSInteger)month count:(NSInteger)count {
+    NSMutableArray *dates = [NSMutableArray new];
+    for (NSInteger i = 0; i < count; i++) {
+        [dates addObject:[self dateForDay:day + i month:month]];
+    }
+    return dates;
+}
+
+- (NSDate *)dateForDay:(NSInteger)day month:(NSInteger)month {
+    NSDateComponents *comps = [NSDateComponents new];
+    comps.day = day;
+    comps.month = month;
+    comps.year = 2015;
+    return [[NSCalendar currentCalendar] dateFromComponents:comps];
 }
 
 @end
