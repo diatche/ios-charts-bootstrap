@@ -1,5 +1,5 @@
 //
-//  ChartView.swift
+//  ChartDataBootstrap.swift
 //  ChartsBootstrap
 //
 //  Created by Pavel Diatchenko on 27/06/2015.
@@ -9,25 +9,10 @@
 import Foundation
 import Charts
 
-class ChartDataBootstrap {
-    var xValues: [AnyObject] = []
+@objc public class ChartDataBootstrap: NSObject {
+    public var xValues: [AnyObject] = []
 
-    var xValuesAreDates = false
-    var xDateValues: [NSDate]? {
-        get {
-            return xValuesAreDates ? xValues as? [NSDate] : nil
-        }
-        set(oValues) {
-            if let values = oValues {
-                xValues = values as [AnyObject]
-            } else {
-                xValues = []
-            }
-            xValuesAreDates = true
-        }
-    }
-
-    var xStringValues: [String] {
+    public var xStringValues: [String] {
         return xValues.map { x -> String in
             if let printable = x as? Printable {
                 return printable.description
@@ -37,18 +22,18 @@ class ChartDataBootstrap {
         }
     }
 
-    var yLineValues: [Float] = []
-    var yBarValues: [Float] = []
+    public var yLineValues: [Float] = []
+    public var yBarValues: [Float] = []
 
-    var combinedData: CombinedChartData {
+    public var combinedData: CombinedChartData {
         var combinedData = CombinedChartData(xVals: xStringValues)
 
         if yLineValues.count != 0 {
             var lineData = LineChartData()
             var entries: [ChartDataEntry] = []
 
-            for (index, yLineValue) in enumerate(yLineValues) {
-                entries.append(ChartDataEntry(value: yLineValue, xIndex: index))
+            for (index, value) in enumerate(yLineValues) {
+                entries.append(ChartDataEntry(value: value, xIndex: index))
             }
 
             lineData.addDataSet(LineChartDataSet(yVals: entries, label: ""))
@@ -59,8 +44,8 @@ class ChartDataBootstrap {
             var barData = BarChartData()
             var barEntries: [BarChartDataEntry] = []
 
-            for (index, yLineValue) in enumerate(yLineValues) {
-                barEntries.append(BarChartDataEntry(value: yLineValue, xIndex: index))
+            for (index, value) in enumerate(yBarValues) {
+                barEntries.append(BarChartDataEntry(value: value, xIndex: index))
             }
 
             barData.addDataSet(BarChartDataSet(yVals: barEntries, label: ""))

@@ -11,7 +11,7 @@
 		A49463B51B3EB1EA0061ECA9 /* ChartsBootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = A49463B41B3EB1EA0061ECA9 /* ChartsBootstrap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A49463BB1B3EB1EA0061ECA9 /* ChartsBootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49463AF1B3EB1EA0061ECA9 /* ChartsBootstrap.framework */; };
 		A49463C21B3EB1EA0061ECA9 /* ChartsBootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49463C11B3EB1EA0061ECA9 /* ChartsBootstrapTests.swift */; };
-		A49463CC1B3EB2AD0061ECA9 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49463CB1B3EB2AD0061ECA9 /* ChartView.swift */; };
+		A49463CC1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49463CB1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift */; };
 		A49463DD1B3EB6930061ECA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49463DC1B3EB6930061ECA9 /* CoreGraphics.framework */; };
 		A49463DF1B3EB6AA0061ECA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49463DE1B3EB6AA0061ECA9 /* Foundation.framework */; };
 		ABCC0393D59D1C0972F53013 /* Pods_ChartsBootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5965507850456A8BDAA9C669 /* Pods_ChartsBootstrap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -38,7 +38,7 @@
 		A49463BA1B3EB1EA0061ECA9 /* ChartsBootstrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartsBootstrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49463C01B3EB1EA0061ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49463C11B3EB1EA0061ECA9 /* ChartsBootstrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsBootstrapTests.swift; sourceTree = "<group>"; };
-		A49463CB1B3EB2AD0061ECA9 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		A49463CB1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataBootstrap.swift; sourceTree = "<group>"; };
 		A49463DC1B3EB6930061ECA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A49463DE1B3EB6AA0061ECA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -100,7 +100,7 @@
 			children = (
 				A49463B41B3EB1EA0061ECA9 /* ChartsBootstrap.h */,
 				A49463B21B3EB1EA0061ECA9 /* Supporting Files */,
-				A49463CB1B3EB2AD0061ECA9 /* ChartView.swift */,
+				A49463CB1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift */,
 			);
 			path = ChartsBootstrap;
 			sourceTree = "<group>";
@@ -216,6 +216,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A49463A51B3EB1E90061ECA9;
 			productRefGroup = A49463B01B3EB1EA0061ECA9 /* Products */;
@@ -283,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49463CC1B3EB2AD0061ECA9 /* ChartView.swift in Sources */,
+				A49463CC1B3EB2AD0061ECA9 /* ChartDataBootstrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,17 @@
+PODS:
+  - Charts (2.1.0)
+  - ChartsBootstrap (0.1.0):
+    - Charts (~> 2.1)
+
+DEPENDENCIES:
+  - ChartsBootstrap (from `../`)
+
+EXTERNAL SOURCES:
+  ChartsBootstrap:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Charts: 8b677edafaad44c439d67cee0b8eaf7a76f9b4df
+  ChartsBootstrap: 2db5ba444afe8bc2dbdd90efb0dbb52617f1a7f8
+
+COCOAPODS: 0.37.2

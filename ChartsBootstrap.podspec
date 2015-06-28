@@ -9,4 +9,5 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/diatche/ios-charts-bootstrap", :tag => "v0.1.0" }
   s.source_files = "Classes", "ChartsBootstrap/**/*.swift"
   s.frameworks = "Foundation", "UIKit", "CoreGraphics"
+  s.dependency 'Charts', '~> 2.1'
 end

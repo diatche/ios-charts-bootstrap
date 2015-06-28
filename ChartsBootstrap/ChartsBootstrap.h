@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double ChartsBootstrapVersionNumber;
 FOUNDATION_EXPORT const unsigned char ChartsBootstrapVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ChartsBootstrap/PublicHeader.h>
-
-
