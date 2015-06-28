@@ -23,9 +23,9 @@
     [super viewDidLoad];
 
     ChartViewBootstrap *bootstrap = [ChartViewBootstrap new];
-    bootstrap.data.xValues = @[@1, @2, @3, @4];
-    bootstrap.data.yLineValues = @[@3, @2, @3, @4];
-    bootstrap.data.yBarValues = @[@1, @1.5, @4, @3];
+    bootstrap.data.xValues = @[@1, @2, @3, @4, @1, @2, @3];
+    bootstrap.data.yLineValues = @[@2, @2.5, @2.8, @2.6, @3, @2.7, @2.5];
+    bootstrap.data.yBarValues = @[@1, @1.5, @2, @1.5, @1, @1.5, @1.5];
 
     [bootstrap bootstrapWithCombinedChart:self.chartView];
 }
